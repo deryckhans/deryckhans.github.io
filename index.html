@@ -1,154 +1,179 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html><head>  <title>www.gbstjogging.be</title> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.fa {
-  padding: 18px;
-  font-size: 25px;
-  width: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>www.gbstjogging.be</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      .fa {
+          padding: 18px;
+          font-size: 25px;
+          width: 25px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius: 50%;
+      }
 
-.fa:hover {
-    opacity: 0.7;
-}
+      .fa:hover {
+          opacity: 0.7;
+      }
 
-.fa-envelope {
-  background: #4f4f4f;
-  color: white;
-}
+      .fa-envelope,
+      .fa-facebook-official,
+      .fa-instagram,
+      .fa-comments-o {
+          background: #4f4f4f;
+          color: white;
+      }
 
-.fa-facebook-official {
-  background: #4f4f4f;
-  color: white;
-}
+      IMG.displayed {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 400px;
+      }
 
-.fa-instagram {
-  background: #4f4f4f;
-  color: white;
-}
+      P {
+          text-align: center;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-size: 80%;
+          color: #736e6e;
+      }
 
-.fa-comments-o{
-  background: #4f4f4f;
-  color: white;
-}
-  
-IMG.displayed { display: block; margin-left: auto; margin-right: auto; max-width: 400px; }  
-P { text-align: center;font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif; font-size: 80%;color: #736e6e; }    
-h1 { text-align: center;font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 250%; color: #000000; }    
-h2 { text-align: center;font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif; font-size: 130%;color: #736e6e; } 
-h3 { text-align: left;font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 150%;color: #736e6e; }
-body { text-align: left;font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif; font-size: 100%;color: #736e6e; }    
+      h1 {
+          text-align: center;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 250%;
+          color: #000000;
+      }
 
+      h2 {
+          text-align: center;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-size: 130%;
+          color: #736e6e;
+      }
 
-input[type=submit]{
-  background-color: #4f4f4f;
-  border: none;
-  color: white;
-  padding: 12px 50px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 15px;
-  font-size: 15px;
-  box-sizing: border-box;
-}
+      h3 {
+          text-align: left;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 150%;
+          color: #736e6e;
+      }
 
-input[type=submit]:hover {
-    opacity: 0.7;
-}
+      body {
+          text-align: left;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-size: 100%;
+          color: #736e6e;
+      }
 
-input[type=text]{
-  width: 400px;
-  padding: 12px 10px;
-  margin: 4px 2px;
-  display: inline-block;
-  border: 1px solid grey;
-  border-radius: 15px;
-  box-sizing: border-box;
-  font-size: 15px;
-}
+      input[type=submit] {
+          background-color: #4f4f4f;
+          border: none;
+          color: white;
+          padding: 12px 50px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 15px;
+          font-size: 15px;
+          box-sizing: border-box;
+      }
 
-div {
-  text-align: center;
-  border-radius: 20px;
-  background-color: #ffffff;
-  padding: 5px 16px;
+      input[type=submit]:hover {
+          opacity: 0.7;
+      }
 
-  width: 100%;
-}
+      input[type=text] {
+          width: 400px;
+          padding: 12px 10px;
+          margin: 4px 2px;
+          display: inline-block;
+          border: 1px solid grey;
+          border-radius: 15px;
+          box-sizing: border-box;
+          font-size: 15px;
+      }
 
-.left {
-  text-align: left;
-  padding: 5px 5px;
-  font-size: 80%;
-}
+      div {
+          text-align: center;
+          border-radius: 20px;
+          background-color: #ffffff;
+          padding: 5px 16px;
+          width: 100%;
+      }
 
-.leftS {
-  text-align: left;
-  padding: 5px 2px;
-  font-size: 80%;
-background-color: #ede4d2;
-}
+      .left {
+          text-align: left;
+          padding: 5px 5px;
+          font-size: 80%;
+      }
 
-.center {
-  margin: auto;
-  text-align: left;
-  width: 95%;  
-  max-width: 700px;
-  border: 1px solid grey;
-  padding: 20px;
-}
+      .leftS {
+          text-align: left;
+          padding: 5px 2px;
+          font-size: 80%;
+          background-color: #ede4d2;
+      }
 
-.la:link {
-  color: #736e6e;
-}
+      .center {
+          margin: auto;
+          text-align: left;
+          width: 95%;
+          max-width: 700px;
+          border: 1px solid grey;
+          padding: 20px;
+      }
 
-.la:visited {
-  background-color: white;
-}
+      .la:link {
+          color: #736e6e;
+      }
 
-.la:hover {
-background-color: #736e6e;
-color: white;
-}
+      .la:visited {
+          background-color: white;
+      }
 
-.laS:link, .laS:visited {
-  color: white;
-  background-color: #be2327;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 30px;
-}
+      .la:hover {
+          background-color: #736e6e;
+          color: white;
+      }
 
-.laS:hover, .laS:active{
-background-color: #ffffff;
-color: #be2327;
-}
+      .laS:link,
+      .laS:visited {
+          color: white;
+          background-color: #be2327;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 30px;
+      }
 
-</style>
-</head> 
+      .laS:hover,
+      .laS:active {
+          background-color: #ffffff;
+          color: #be2327;
+      }
+  </style>
+</head>
 <body>
-<div>
-
-<div class="center">
-<div class="leftS">
-<br><br>
-<IMG class="displayed" src="https://www.gbstjogging.be/2025_GBS-jogging.jpg" alt="image">
-<br><br>
-<h1 style="color: #be2327"><a href="https://forms.gle/bjFCHxcaKAubKyJd9" target="_blank" class="laS">&nbsp;&nbsp;Schrijf je hier in !&nbsp;&nbsp;</a></h1>
-<br><br>
-</div>
-</div>
-<br><br>
-
-<div class="center">
-<div class="left">
-
+  <div>
+    <div class="center">
+      <div class="leftS">
+        <br><br>
+        <img class="displayed" src="https://www.gbstjogging.be/2025_GBS-jogging.jpg" alt="GBS Jogging Event Image">
+        <br><br>
+        <h1 style="color: #be2327">
+          <a href="https://forms.gle/bjFCHxcaKAubKyJd9" target="_blank" class="laS">&nbsp;&nbsp;Schrijf je hier in !&nbsp;&nbsp;</a>
+        </h1>
+        <br><br>
+      </div>
+    </div>
+    <br><br>
+  </div>
 </body>
 </html>

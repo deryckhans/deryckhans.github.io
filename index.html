@@ -1,194 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>www.gbstjogging.be</title>
+  <title>GBS Jogging</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-      .fa {
-          padding: 18px;
-          font-size: 25px;
-          width: 25px;
-          text-align: center;
-          text-decoration: none;
-          margin: 5px 2px;
-          border-radius: 50%;
-      }
+    body {
+      margin: 0;
+      font-family: Quicksand, "Lucida Sans", Arial, Helvetica, sans-serif;
+      font-size: 100%;
+      color: #736e6e;
+      background-color: #ffffff;
+    }
 
-      .fa:hover {
-          opacity: 0.7;
-      }
+    .fa {
+      padding: 18px;
+      font-size: 25px;
+      width: 25px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      background: #4f4f4f;
+      color: #ffffff;
+    }
 
-      .fa-envelope,
-      .fa-facebook-official,
-      .fa-instagram,
-      .fa-comments-o {
-          background: #4f4f4f;
-          color: white;
-      }
+    .fa:hover {
+      opacity: 0.7;
+    }
 
-      IMG.displayed {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 100%;
-          max-width: 100%;
-          height:auto;
-      }
+    img.displayed {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
 
-      P {
-          text-align: center;
-          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
-          font-size: 80%;
-          color: #736e6e;
-      }
+    h1, h2, h3, p {
+      margin: 0;
+      text-align: center;
+    }
 
-      h1 {
-          text-align: center;
-          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
-          font-weight: bold;
-          font-size: 250%;
-          color: #000000;
-      }
+    h1 {
+      font-weight: bold;
+      font-size: 250%;
+      color: #000000;
+    }
 
-      h2 {
-          text-align: center;
-          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
-          font-size: 130%;
-          color: #736e6e;
-      }
+    h2 {
+      font-size: 130%;
+      color: #736e6e;
+    }
 
-      h3 {
-          text-align: left;
-          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
-          font-weight: bold;
-          font-size: 150%;
-          color: #736e6e;
-      }
+    h3 {
+      text-align: left;
+      font-weight: bold;
+      font-size: 150%;
+      color: #736e6e;
+    }
 
-      body {
-          text-align: left;
-          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
-          font-size: 100%;
-          color: #736e6e;
-      }
+    p {
+      font-size: 80%;
+    }
 
-      input[type=submit] {
-          background-color: #4f4f4f;
-          border: none;
-          color: white;
-          padding: 12px 50px;
-          text-decoration: none;
-          margin: 4px 2px;
-          cursor: pointer;
-          border-radius: 15px;
-          font-size: 15px;
-          box-sizing: border-box;
-      }
+    .wrapper {
+      width: 100%;
+      padding: 10px 0;
+    }
 
-      input[type=submit]:hover {
-          opacity: 0.7;
-      }
+    .center {
+      margin: 0 auto;
+      width: 95%;
+      max-width: 700px;
+      border: 1px solid grey;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+    }
 
-      input[type=text] {
-          width: 400px;
-          padding: 12px 10px;
-          margin: 4px 2px;
-          display: inline-block;
-          border: 1px solid grey;
-          border-radius: 15px;
-          box-sizing: border-box;
-          font-size: 15px;
-      }
+    .block-highlight {
+      background-color: #fbf4e4;
+      padding: 10px;
+      border-radius: 16px;
+    }
 
-      div {
-          text-align: center;
-          border-radius: 20px;
-          background-color: #ffffff;
-          padding: 5px 16px;
-          width: 100%;
-      }
+    .btn-link {
+      color: black;
+      background-color: #f6a264;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 30px;
+      margin: 0 5px;
+    }
 
-      .left {
-          text-align: left;
-          padding: 5px 5px;
-          font-size: 80%;
-      }
+    .btn-link:hover,
+    .btn-link:active {
+      background-color: #24876b;
+      color: black;
+    }
 
-      .leftS {
-          text-align: left;
-          padding: 5px 2px;
-          font-size: 80%;
-          background-color: #fbf4e4;
-      }
+    .link-inline {
+      color: red;
+      text-decoration: underline;
+    }
 
-      .center {
-          margin: auto;
-          text-align: left;
-          width: 95%;
-          max-width: 700px;
-          border: 1px solid grey;
-          padding: 20px;
-      }
-
-      .la:link {
-          color: #736e6e;
-      }
-
-      .la:visited {
-          background-color: white;
-      }
-
-      .la:hover {
-          background-color: #736e6e;
-          color: #212121;
-      }
-
-      .laS:link,
-      .laS:visited {
-          color: black;
-          background-color: #f6a264;
-          padding: 14px 25px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          border-radius: 30px;
-      }
-
-      .laS:hover,
-      .laS:active {
-          background-color: #24876b;
-          color: black;
-      }
+    .gpx-links {
+      text-align: center;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
-  <div>
+
+  <div class="wrapper">
     <div class="center">
-      <div class="leftS">
+      <div class="block-highlight">
+        <img class="displayed" src="https://www.gbstjogging.be/savethedate.jpg" alt="GBS Jogging Save the Date">
         <br><br>
-        <img class="displayed" src="https://www.gbstjogging.be/savethedate.jpg" alt="GBS Jogging Event Image">
-        <br><br>
-        <h1 style="color: #be2327">
-          dit jaar fier onderdeel van het <a href="https://www.uitindedruivenstreek.be/loopcriterium" style="color: red; text-decoration: underline;"> druivencriterium </a>
+        <h1 style="color: #be2327;">
+          dit jaar fier onderdeel van het
+          <a href="https://www.uitindedruivenstreek.be/loopcriterium" class="link-inline">
+            druivencriterium
+          </a>
         </h1>
-        <br><br>        
+        <br><br>
       </div>
     </div>
-    <br>
-  <div>
- 
-
-<div class="center">
-  <div class="leftS">
-    <h1>Het Parcours</h1>
-    <h2> Loopt voor 95% door het prachtige Zoniënwoud en is autovrij !</h2>
-    <img class="displayed" src="parcours gbst.jpg" alt="Parcours Image">
-    <p>
-      <a href="GBST JOGGING 6km.gpx" class="laS">gpx 6 km</a>
-      <a href="GBSTJogging12km2025.gpx" class="laS">gpx 12km</a>
-    </p>
   </div>
-</div>
+
+  <div class="wrapper">
+    <div class="center">
+      <div class="block-highlight">
+        <h1>Het Parcours</h1>
+        <h2>Loopt voor 95% door het prachtige Zoniënwoud en is autovrij!</h2>
+        <br>
+        <img class="displayed" src="parcours gbst.jpg" alt="Parcours GBS Jogging">
+        <div class="gpx-links">
+          <a href="GBST JOGGING 6km.gpx" class="btn-link">gpx 6 km</a>
+          <a href="GBSTJogging12km2025.gpx" class="btn-link">gpx 12 km</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

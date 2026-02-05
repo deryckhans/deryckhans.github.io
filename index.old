@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>www.gbstjogging.be</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      .fa {
+          padding: 18px;
+          font-size: 25px;
+          width: 25px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius: 50%;
+      }
+
+      .fa:hover {
+          opacity: 0.7;
+      }
+
+      .fa-envelope,
+      .fa-facebook-official,
+      .fa-instagram,
+      .fa-comments-o {
+          background: #4f4f4f;
+          color: white;
+      }
+
+      IMG.displayed {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          max-width: 100%;
+          height:auto;
+      }
+
+      P {
+          text-align: center;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-size: 80%;
+          color: #736e6e;
+      }
+
+      h1 {
+          text-align: center;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 250%;
+          color: #000000;
+      }
+
+      h2 {
+          text-align: center;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-size: 130%;
+          color: #736e6e;
+      }
+
+      h3 {
+          text-align: left;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 150%;
+          color: #736e6e;
+      }
+
+      body {
+          text-align: left;
+          font-family: Quicksand, Lucida Sans, Arial, Helvetica, sans-serif;
+          font-size: 100%;
+          color: #736e6e;
+      }
+
+      input[type=submit] {
+          background-color: #4f4f4f;
+          border: none;
+          color: white;
+          padding: 12px 50px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 15px;
+          font-size: 15px;
+          box-sizing: border-box;
+      }
+
+      input[type=submit]:hover {
+          opacity: 0.7;
+      }
+
+      input[type=text] {
+          width: 400px;
+          padding: 12px 10px;
+          margin: 4px 2px;
+          display: inline-block;
+          border: 1px solid grey;
+          border-radius: 15px;
+          box-sizing: border-box;
+          font-size: 15px;
+      }
+
+      div {
+          text-align: center;
+          border-radius: 20px;
+          background-color: #ffffff;
+          padding: 5px 16px;
+          width: 100%;
+      }
+
+      .left {
+          text-align: left;
+          padding: 5px 5px;
+          font-size: 80%;
+      }
+
+      .leftS {
+          text-align: left;
+          padding: 5px 2px;
+          font-size: 80%;
+          background-color: #fbf4e4;
+      }
+
+      .center {
+          margin: auto;
+          text-align: left;
+          width: 95%;
+          max-width: 700px;
+          border: 1px solid grey;
+          padding: 20px;
+      }
+
+      .la:link {
+          color: #736e6e;
+      }
+
+      .la:visited {
+          background-color: white;
+      }
+
+      .la:hover {
+          background-color: #736e6e;
+          color: #212121;
+      }
+
+      .laS:link,
+      .laS:visited {
+          color: black;
+          background-color: #f6a264;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 30px;
+      }
+
+      .laS:hover,
+      .laS:active {
+          background-color: #24876b;
+          color: black;
+      }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="center">
+      <div class="leftS">
+        <br><br>
+        <img class="displayed" src="https://www.gbstjogging.be/savethedate.jpg" alt="GBS Jogging Event Image">
+        <br><br>
+        <h1 style="color: #be2327">
+          dit jaar fier onderdeel van het <a href="https://www.uitindedruivenstreek.be/loopcriterium" style="color: red; text-decoration: underline;"> druivencriterium </a>
+        </h1>
+        <br><br>        
+      </div>
+    </div>
+    <br>
+  <div>
+    <div class="center">
+      <div class="leftS">
+        <br>      
+          <header>
+        <h1>Kom en doe mee aan de GBST Jogging!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Algemene informatie</h2>
+            <p>Op vrijdag 9 mei 2025 vindt de vierde editie van de GBST Jogging plaats, georganiseerd door de ouderraad van de GBST.</p>
+            <p>De opbrengst gaat volledig naar de schoolwerking, dus je steunt een goed doel terwijl je actief bezig bent.</p>
+        </section>
+        <section>
+            <h2>Wat kun je verwachten?</h2>
+            <ul>
+                <li>Een gezellige sfeer in het hartje van Tervuren.</li>
+                <li>Een uitdagend parcours (6 en 12 km) door het prachtige Zoniënwoud (95% autovrij).</li>
+                <li>Leuke activiteiten voor jong en oud.</li>
+                <li>Een bar voor een verfrissend drankje voor en/of na het lopen met heerlijke snacks.</li>
+                <li>Podiumceremonie.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Inschrijvingen</h2>
+            <p>Meedoen aan de jogging kost 7 euro per persoon. Hiermee steun je de schoolwerking.</p>
+            <p>Vanaf 25 april kan je enkel nog ter plaatse inschrijven.</p>
+            <p>Kinderen jonger dan 14 jaar lopen gratis, maar het is wel nodig ze in te schrijven.</p>
+            <p>Loopnummer met tijdsregistratie wordt voor elke deelnemer voorzien.</p>
+        </section>
+        <section>
+            <h2>Betaling</h2>
+            <p>Gelieve het bedrag over te schrijven op rekeningnummer:</p>
+            <p><strong>BE39 2300 1160 1119</strong> met de vrije mededeling: GBST jogging + naam.</p>
+            <p>De inschrijving is pas in orde na de overschrijving.</p>
+        </section>
+        <section>
+            <h2>Planning vrijdag 9 mei 2025</h2>
+            <ul>
+                <li><strong>17u30 - 19u:</strong> Inschrijven/afhalen borstnummers.</li>
+                <li><strong>19u00:</strong> Vertrek 12km loop (1 bevoorrading).</li>
+                <li><strong>19u10:</strong> Vertrek 6km loop.</li>
+                <li><strong>20u30:</strong> Podiumceremonie en prijsuitreiking.</li>
+            </ul>
+            <p><strong>Start en aankomst:</strong> GBST Paardemarktstraat 1; 3080 Tervuren.</p>
+        </section>      
+      </div>
+    </div>
+    <br>
+<div class="center">
+  <div class="leftS">
+    <h1>Het Parcours</h1>
+    <h2> Loopt voor 95% door het prachtige Zoniënwoud en is autovrij !</h2>
+    <img class="displayed" src="parcours gbst.jpg" alt="Parcours Image">
+    <p>
+      <a href="GBST JOGGING 6km.gpx" class="laS">gpx 6 km</a>
+      <a href="GBSTJogging12km2025.gpx" class="laS">gpx 12km</a>
+    </p>
+  </div>
+</div>
+</body>
+</html>

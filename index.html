@@ -2,17 +2,31 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GBS Jogging</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    :root{
+      --text: #736e6e;
+      --dark: #4f4f4f;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --highlight: #fbf4e4;
+      --accent: #f6a264;
+      --accent2: #24876b;
+      --border: rgba(0,0,0,.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Quicksand, "Lucida Sans", Arial, Helvetica, sans-serif;
       font-size: 100%;
-      color: #736e6e;
-      background-color: #ffffff;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.45;
     }
-
     .fa {
       padding: 18px;
       font-size: 25px;
@@ -21,13 +35,11 @@
       text-decoration: none;
       margin: 5px 2px;
       border-radius: 50%;
-      background: #4f4f4f;
+      background: var(--dark);
       color: #ffffff;
+      transition: opacity .2s ease;
     }
-
-    .fa:hover {
-      opacity: 0.7;
-    }
+    .fa:hover { opacity: 0.7; }
 
     img.displayed {
       display: block;
@@ -35,84 +47,94 @@
       width: 100%;
       max-width: 100%;
       height: auto;
+      border-radius: 14px;
     }
 
-    h1, h2, h3, p {
-      margin: 0;
-      text-align: center;
-    }
-
+    h1, h2, h3, p { margin: 0; text-align: center; }
     h1 {
-      font-weight: bold;
-      font-size: 250%;
+      font-weight: 700;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
       color: #000000;
+      letter-spacing: .2px;
     }
-
     h2 {
-      font-size: 130%;
-      color: #736e6e;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      color: var(--text);
+      margin-top: .35rem;
     }
-
     h3 {
       text-align: left;
       font-weight: bold;
       font-size: 150%;
-      color: #736e6e;
+      color: var(--text);
     }
+    p { font-size: 90%; }
 
-    p {
-      font-size: 80%;
-    }
-
-    .wrapper {
-      width: 100%;
-      padding: 10px 0;
-    }
-
+    .wrapper { width: 100%; padding: 16px 0; }
     .center {
       margin: 0 auto;
-      width: 95%;
-      max-width: 700px;
-      border: 1px solid grey;
-      border-radius: 20px;
-      padding: 20px;
-      background-color: #ffffff;
+      width: 94%;
+      max-width: 760px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      background-color: var(--card);
+      box-shadow: var(--shadow);
     }
-
     .block-highlight {
-      background-color: #fbf4e4;
-      padding: 10px;
+      background-color: var(--highlight);
+      padding: 16px;
       border-radius: 16px;
     }
 
     .btn-link {
-      color: black;
-      background-color: #f6a264;
-      padding: 14px 25px;
+      color: #111;
+      background-color: var(--accent);
+      padding: 14px 22px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      border-radius: 30px;
-      margin: 0 5px;
+      border-radius: 999px;
+      margin: 0 6px;
+      font-weight: 700;
+      letter-spacing: .2px;
+      transition: transform .15s ease, background-color .15s ease, box-shadow .15s ease;
+      box-shadow: 0 8px 18px rgba(246, 162, 100, .28);
     }
-
     .btn-link:hover,
     .btn-link:active {
-      background-color: #24876b;
-      color: black;
+      background-color: var(--accent2);
+      color: #111;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 22px rgba(36, 135, 107, .25);
+    }
+    .btn-link:focus-visible,
+    .link-inline:focus-visible {
+      outline: 3px solid rgba(190, 35, 39, .35);
+      outline-offset: 3px;
     }
 
     .link-inline {
-      color: red;
+      color: #be2327;
       text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
     }
 
-    .gpx-links {
+    .gpx-links,
+    .cta-buttons {
       text-align: center;
       margin-top: 15px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+    .btn-primary { min-width: 180px; }
+    .cta h1 { color: #be2327; }
   </style>
 </head>
+
 <body>
 
   <div class="wrapper">
@@ -127,6 +149,28 @@
           </a>
         </h1>
         <br><br>
+      </div>
+    </div>
+  </div>
+
+  <!-- NIEUW: inschrijvings-link tussen Save the date en Parcours -->
+  <div class="wrapper">
+    <div class="center">
+      <div class="block-highlight cta">
+        <h1>Inschrijven</h1>
+        <h2>Schrijf je nu in via het inschrijfformulier</h2>
+        <br>
+        <div class="cta-buttons">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSedoqzhHv0LfX01IeoBmi7v8737voZKnUo6Pm3_ULcMSkRSTw/viewform?pli=1"
+            class="btn-link btn-primary"
+            target="_blank"
+            rel="noopener"
+            aria-label="Inschrijven via Google Formulier (opent in nieuw tabblad)"
+          >
+            Inschrijven
+          </a>
+        </div>
       </div>
     </div>
   </div>
